@@ -229,6 +229,49 @@ body {
     background: #f1f1f1;
     overflow: hidden scroll; /* 넘치면 : x축 숨기고, y축 스크롤해*/
 }
+.agreement-check {
+    margin: 20px 0 50px; /* 위 20, 좌우 0, 아래 50 마진적용 */
+}
+input[type=checkbox] { /* 속성 선택자, html 속성을 기준으로 선택 */
+   width: 20px;
+   height: 20px;
+   vertical-align: middle;
+   margin-right:10px;
+}
+input[type=checkbox] + label { /* + : 다음에 오는 형제 요소 선택 */
+    font-size: 1rem;
+}
+input[type=checkbox]:checked {
+    color: #E92F2F;
+}
+.btns {
+    text-align: center;
+}
+.btns input[type=submit] {
+    background: #E92F2F;
+    color:rgba(255, 255, 255, 1);
+    width: 250px;
+    height: 70px;
+    font-size: 1.250rem;
+    border: 0;
+    margin-right: 10px;
+}
+.btns input[type=reset] {
+    background: #fff;
+    color: #666;
+    width: 250px;
+    height: 70px;
+    font-size: 1.250rem;
+    border: 1px solid #666
+}
+.btns input[type=submit]:hover {
+    background: #5C1010;
+    color: white;
+}
+.btns input[type=reset]:hover {
+    background: #000;
+    color: white;
+}
 
 
 /* ============== .aside-wrap ================ */
@@ -267,6 +310,9 @@ body {
 }
 .etc li {
     display: inline-block;
+}
+address {
+    font-style: normal; /* 글꼴-스타일 : 보통(기울어지지 않은) */
 }
 address p {
     display: inline-block;
