@@ -2,7 +2,7 @@ function open_mailer(){/* 모달 팝업창 보여주는 기능 */
     let modal = document.querySelector("#modal")
     modal.style.display = "block"
 }
-
+/* function : 기능, function 사용은 기능의 이름(); */
 function close_mailer(){/* 모달 팝업창 감추는 기능 */
     let close = document.querySelector(".close-modal")
     let modal = document.querySelector("#modal")
